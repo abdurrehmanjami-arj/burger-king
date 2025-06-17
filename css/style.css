@@ -1,0 +1,80 @@
+@font-face {
+  font-family: "flame-bold";
+  src: url("../fonts/FlameBold.otf") format("truetype");
+  font-style: normal;
+}
+@font-face {
+  font-family: "flame-regular";
+  src: url("../fonts/FlameRegular.otf") format("truetype");
+  font-style: normal;
+}
+:root {
+  --main-color: #502314;
+  --main-btn-color: #a71b00;
+  --mai-btn-text: #ffffff;
+  --secondry-btn-text: #643b2d;
+  --view-cart-text: #737395;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+/* header stared */
+/* navbar started */
+header {
+  border-bottom: 1px solid var(--view-cart-text);
+  background-color: #f8f1e7;
+}
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+}
+.menu-icon {
+  font-size: 3rem;
+  color: var(--secondry-btn-text);
+}
+.logo {
+  font-family: "flame-regular";
+  font-size: 3rem;
+  font-weight: 500;
+  color: var(--main-color);
+}
+.icon {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.icon div {
+  gap: 20px;
+  color: var(--secondry-btn-text);
+  font-size: 2.5rem;
+}
+.cart {
+  font-size: 2rem;
+  padding: 10px 20px;
+  border: 1px solid var(--secondry-btn-text);
+  border-radius: 20px;
+  color: var(--view-cart-text);
+  bottom: 5px;
+  font-family: "flame-regular";
+}
+@media (max-width: 545px) {
+  .nav-bar {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 950px) {
+}
+/*navbar ended */
+/* header ended */
