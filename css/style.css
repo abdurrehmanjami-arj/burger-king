@@ -169,12 +169,94 @@ header {
   .hero-container {
     flex-direction: column-reverse;
   }
+  .order-pickup button {
+    padding: 10 0px;
+  }
+  .order-delivery button {
+    padding: 10 0px;
+  }
 }
 @media (max-with: 640px) {
   html {
     font-size: 10%;
   }
+  .order-pickup button {
+    padding: 0;
+  }
+  .order-delivery button {
+    padding: 0;
+  }
 }
 /* hero seciton ended */
+
+/* order menu section started */
+.order-menu-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.menu {
+  flex: 1;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  border: 1px solid var(--secondry-btn-text);
+  border-radius: 10px;
+}
+.menu img {
+  width: 100%;
+  border-radius: 10px;
+}
+.menu h1 {
+  font-size: 3rem;
+  font-family: "flame-regular";
+  color: var(--secondry-btn-text);
+  font-weight: 400;
+  margin-left: 5px;
+}
+.menu p {
+  font-size: 2rem;
+  font-family: "flame-regular";
+  color: var(--secondry-btn-text);
+  font-weight: 300;
+  margin: 0px 5px;
+  text-align: justify;
+  line-height: 20px;
+}
+.menu button {
+  font-family: "flame-regular";
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 3px;
+  align-self: flex-end;
+  width: 30%;
+  height: 45px;
+  margin: 15px 15px;
+  border-radius: 10px;
+  border: 1px solid var(--secondry-btn-text);
+  color: var(--secondry-btn-text);
+}
+
+@media (max-width: 1024px) {
+  .order-menu-container {
+    flex-direction: column;
+  }
+  .menu {
+    width: 100%;
+  }
+  .menu h1 {
+    font-size: 5rem;
+  }
+  .menu p {
+    font-size: 4rem;
+  }
+  .menu button {
+    width: 50%;
+    margin: 15px auto;
+    font-size: 4rem;
+  }
+}
+/* order menu section ended */
 
 /* main ended */
