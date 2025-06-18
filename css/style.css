@@ -259,4 +259,78 @@ header {
 }
 /* order menu section ended */
 
+/* app downlaod section started */
+.app-download-containre {
+  /* height: 400px; */
+  display: flex;
+  margin: 10px 30px;
+}
+.bar-code-image {
+  margin-right: 50px;
+}
+.bar-code-image img {
+  width: 100%;
+}
+.store-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.store-links h1 {
+  font-family: "flame-regular";
+  font-size: 7rem;
+  color: var(--secondry-btn-text);
+  padding-top: 30px;
+}
+.store-links p {
+  font-family: "flame-regular";
+  font-size: 2rem;
+  color: var(--secondry-btn-text);
+  /* padding-top: 20px; */
+}
+.download-store img {
+  width: 45%;
+  height: 100px;
+  object-fit: cover;
+  border: none;
+  border-radius: 10px;
+}
+
+@media (max-width: 1280px) {
+  .store-links p {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 1024px) {
+  .app-download-containre {
+    flex-direction: column-reverse;
+  }
+  .download-store img {
+    width: 30%;
+    height: 60px;
+  }
+  .store-links {
+    gap: 20px;
+  }
+  .store-links h1 {
+    font-size: 8rem;
+  }
+  .store-links p {
+    font-size: 8rem;
+  }
+  .bar-code-image{
+    text-align: center;
+  }
+  .bar-code-image img {
+    height: 200px;
+    width: 50%;
+  }
+}
+@media (max-width: 768px) {
+  .store-links p {
+    font-size: 5rem;
+  }
+}
+/* app downlaod section ended */
+
 /* main ended */
