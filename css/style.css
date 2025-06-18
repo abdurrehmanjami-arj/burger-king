@@ -75,3 +75,106 @@ header {
 }
 /*navbar ended */
 /* header ended */
+
+/* main started */
+
+/* hero seciton started */
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  margin: 0px 40px;
+  width: 40%;
+}
+.hero-heading {
+  font-family: "flame-bold";
+  font-size: 6rem;
+  color: var(--secondry-btn-text);
+}
+.order-pickup {
+  width: 100%;
+  text-align: center;
+}
+.order-pickup button {
+  width: 100%;
+  padding: 20px 30px;
+  font-size: 2.5rem;
+  background-color: var(--main-btn-color);
+  color: var(--mai-btn-text);
+  border: none;
+  border-radius: 20px;
+  font-family: "flame-regular";
+  letter-spacing: 3px;
+  font-weight: 400;
+}
+.order-pickup button i {
+  margin-right: 15px;
+}
+.order-delivery {
+  width: 100%;
+  text-align: center;
+}
+.order-delivery button {
+  width: 100%;
+  padding: 20px 30px;
+  font-size: 2.5rem;
+  color: var(--secondry-btn-text);
+  border: 2px solid var(--main-color);
+  border-radius: 20px;
+  margin: 15px 0px;
+  font-family: "flame-regular";
+  letter-spacing: 3px;
+  font-weight: 400;
+}
+.order-delivery button i {
+  margin-right: 15px;
+}
+.hero-image img {
+  width: 100%;
+}
+.hero-image p {
+  font-size: 3rem;
+  font-family: "flame-regular";
+  color: var(--secondry-btn-text);
+  font-weight: 300;
+}
+
+@media (max-width: 1536px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 1280px) {
+  html {
+    font-size: 40%;
+  }
+}
+@media (max-width: 1024px) {
+  html {
+    font-size: 20%;
+  }
+}
+@media (max-width: 768px) {
+  .hero-heading {
+    display: none;
+  }
+  .hero-container {
+    flex-direction: column-reverse;
+  }
+}
+@media (max-with: 640px) {
+  html {
+    font-size: 10%;
+  }
+}
+/* hero seciton ended */
+
+/* main ended */
